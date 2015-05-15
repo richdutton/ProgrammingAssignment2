@@ -36,8 +36,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Returns the inverse of a matrix wrapper created with makeCacheMatrix and
-## passed as the first and only argument. Prints a message when returning 
-## cached value.
+## passed as the first argument. Subsequent arguments are passed to solve.
+## Prints a message when returning cached value.
 
 cacheSolve <- function(x, ...) {
     ## Return a matrix that is the inverse of 'x'
